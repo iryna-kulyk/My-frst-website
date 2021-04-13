@@ -1,0 +1,368 @@
+.body_slides{
+    list-style:none;
+    margin:0;
+    padding:0;
+    z-index:-2; 
+    background:black;}
+
+.body_slides:after{
+	position: absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;}
+
+ 
+ 
+.body_slides li{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-size:cover;
+    background-repeat:no-repeat;
+    opacity:0;
+    -webkit-animation: anim_slides 18s linear infinite 0s;
+    -moz-animation: anim_slides 18s linear infinite 0s;
+    -o-animation: anim_slides 18s linear infinite 0s;
+    -ms-animation: anim_slides 18s linear infinite 0s;
+    animation: anim_slides 18s linear infinite 0s;
+}
+.body_slides li:nth-child(1){
+	background-image: url(https://media.architecturaldigest.com/photos/5d49d4d911d3930008a81c6c/master/pass/GettyImages-872448084.jpg) 
+}
+.body_slides li:nth-child(2){
+	-webkit-animation-delay: 6.0s;
+	-moz-animation-delay: 6.0s;
+	background-image: url(https://cdn.britannica.com/28/116528-050-1CAC6728/Great-Court-Foster-and-Partners-British-Museum-2000.jpg) 
+}
+.body_slides li:nth-child(3){
+	-webkit-animation-delay: 12.0s;
+	-moz-animation-delay: 12.0s;
+	background-image: url(https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe3bbe796-2288-11ea-bf0a-65463b7bd0d0.jpg?crop=2799%2C1574%2C221%2C293&resize=1180) 
+}
+@-webkit-keyframes anim_slides {
+0% {opacity:0;}
+6% {opacity:1;}
+24% {opacity:1;}
+30% {opacity:0;}
+100% {opacity:0;}
+}
+@-moz-keyframes anim_slides {
+0% {opacity:0;}
+6% {opacity:1;}
+24% {opacity:1;}
+30% {opacity:0;}
+100% {opacity:0;}
+}
+#about_us{
+	position: absolute;
+	color:white;
+	font-family: Arial;
+	font-size: 20px;
+	margin-top: 1%;
+	margin-left: 1%;
+	width: 80px; 
+	height: 30px; 
+	border: 1px solid white;
+	border-top-left-radius: 100% 20px; border-bottom-right-radius: 100% 20px;
+	background: #759AA1;
+	border-color: #759AA1;
+	
+}
+
+#architecture_title{
+	position: absolute;
+	color:white;
+	font-family: Arial;
+	font-size: 70px;
+	letter-spacing: 26px;
+	margin-top: 22%;
+	margin-left: 1%;
+}
+#under_title{
+	position: absolute;
+	color:white;
+	font-family: Arial;
+	font-size: 20px;
+	margin-top: 28%;
+	margin-left: 43%;
+}
+#unknown{
+	position: absolute;
+	margin-top: 60%;
+	margin-left: 33%;
+	font-size: 40px;
+	font-family: Arial;
+	color: #759AA1;	
+}
+
+
+table{
+	position: absolute;
+	height: 100%;
+	border: 2px solid #759AA1;
+	padding-top: 83%;
+	margin-left: 47.5%;
+	margin-top: 65%;
+}
+
+.container {
+	display: inline-block;}
+	.box {
+		height: 250px;
+		width: 250px;
+		border-radius: 50%;}
+	.box1:hover {
+		-webkit-transform: scale(2);
+		-ms-ransform: scale(2);
+		transform: scale(2);}
+		
+	.box2:hover {
+		-webkit-transform: scale(2);
+		-ms-ransform: scale(2);
+		transform: scale(2);}
+		
+	.box3:hover {
+		-webkit-transform: scale(2);
+		-ms-ransform: scale(2);
+		transform: scale(2);}
+	
+	
+	.box1 {
+		position: absolute;
+		background: url(https://developmentone.net/wp-content/uploads/2019/07/gothic-architecture.jpg);
+		background-size: 150%;
+		transition: .5s;
+		margin-top: 72%; 
+		margin-left: 15%;}
+	.box2 {
+		position: absolute;
+		background: url(https://www.nomadepicureans.com/wp-content/uploads/2019/03/baroque-architecture-in-europe.jpg);
+		background-size: 145%;
+		transition: .5s;
+		margin-top: 100%; 
+		margin-left: 69%;}
+		
+	.box3 {
+		position: absolute;
+		background: url(http://www.neoclassicism.us/images/US-Capitol.jpg);
+		background-size: 175%;
+		transition: .5s;
+		margin-top: 125%; 
+		margin-left: 15%;}
+		
+#gothic_text{
+		position: absolute;
+		font-family: Arial;
+		width: 600px;
+		margin-left: 55%;
+		margin-top: 76%;
+		text-align: center;
+		color: grey;
+}
+
+#baroque_text{
+		position: absolute;
+		font-family: Arial;
+		width: 570px;
+		margin-left: 3.5%;
+		margin-top: 103%;
+		text-align: center;
+		color: grey;
+}
+
+#neoclassic_text{
+		position: absolute;
+		font-family: Arial;
+		width: 570px;
+		margin-left: 55%;
+		margin-top: 128%;
+		text-align: center;
+		color: grey;
+}
+
+#modern_img img{
+	width:40%;
+	margin-top: 155%;
+	margin-left: 45%;
+}
+		#modern_img img:hover {
+			filter: blur(5px);	
+		}
+
+#modern_boom{
+	position: absolute;
+	color:pink;
+	font-family: Arial;
+	font-size: 100px;
+	margin-top: -28%;
+	margin-left: 12%;
+}
+	#modern_boom:hover{
+		filter: blur(5px);
+	}
+	
+
+
+@keyframes loader {
+  0% {transform:rotate(-45deg)}
+  25%{transform:rotate(-135deg)}
+  50%{transform:rotate(-225deg)}
+	75% {transform:rotate(-315deg)}
+	100% {transform:rotate(-405deg)}
+  }
+@keyframes span-1 {
+  0% {transform:translate(0);background:url(db53327578316a8fec882db091800a10.jpg);
+		background-size: 105%;}
+  25%{transform:translate(-300px, 0);
+		background:url(Arquitectura_y_color_8b.jpg);
+		background-size: 105%;}
+  50%{transform:translate(0);background:url(d7d2c56644d187fb4051f57bf872e959.jpg);
+		background-size: 105%;}
+  75%{transform:translate(300px, 0);background:url(d93adb8a4fd4086abb7f86519607557b.jpg);
+		background-size: 105%;}
+	100%{transform:translate(0);background:url(db53327578316a8fec882db091800a10.jpg);
+		background-size: 105%;}
+		}
+@keyframes span-2 {
+  0%{transform:translate(0);background:url(d93adb8a4fd4086abb7f86519607557b.jpg);
+		background-size: 105%;}
+  25%{transform:translate(300px, 0);
+		background:url(db53327578316a8fec882db091800a10.jpg);
+		background-size: 105%;}
+  50%{transform:translate(0);background:url(Arquitectura_y_color_8b.jpg);
+		background-size: 105%;}
+	75%{transform:translate(-300px, 0);background:url(d7d2c56644d187fb4051f57bf872e959.jpg);
+		background-size: 105%;}
+	100%{transform:translate(0);background:url(d93adb8a4fd4086abb7f86519607557b.jpg);
+		background-size: 105%;}
+		}
+@keyframes span-3 {
+  0%{transform:translate(0);background:url(d7d2c56644d187fb4051f57bf872e959.jpg);
+		background-size: 105%;}
+  25%{transform:translate(0, -300px);
+		background:url(d93adb8a4fd4086abb7f86519607557b.jpg);
+		background-size: 105%;}
+  50%{transform:translate(0);background:url(db53327578316a8fec882db091800a10.jpg);
+		background-size: 105%;}
+	75%{transform:translate(0, 300px);background:url(Arquitectura_y_color_8b.jpg);
+		background-size: 105%;}
+	100%{transform:translate(0);background:url(d7d2c56644d187fb4051f57bf872e959.jpg);
+		background-size: 105%;}
+		}
+@keyframes span-4 {
+  0%{transform:translate(0);background:url(Arquitectura_y_color_8b.jpg);
+		background-size: 105%;}
+  25%{transform:translate(0, 300px);
+		background:url(d7d2c56644d187fb4051f57bf872e959.jpg);
+		background-size: 105%;}
+	50%{transform:translate(0);background:url(d93adb8a4fd4086abb7f86519607557b.jpg);
+		background-size: 105%;}
+	75%{transform:translate(0, -300px);background:url(db53327578316a8fec882db091800a10.jpg);
+		background-size: 105%;}
+	100%{transform:translate(0);background:url(Arquitectura_y_color_8b.jpg);
+		background-size: 105%;}
+		}
+.loader {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  animation: loader 15s infinite ease-in-out;
+  margin-left: 39%;
+  margin-top: 25%;
+}
+.loader span {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+}
+.loader span:nth-child(1) {
+  animation: span-1 15s ease-in-out infinite;
+}
+.loader span:nth-child(2) {
+  animation: span-2 15s ease-in-out infinite;
+}
+.loader span:nth-child(3) {
+  animation: span-3 15s ease-in-out infinite;
+}
+.loader span:nth-child(4) {
+  animation: span-4 15s ease-in-out infinite;
+}
+
+{box-sizing:border-box}
+.border {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@keyframes border {
+  0% {transform:rotate(-45deg)}
+  50%{transform:rotate(-135deg)}
+  100%{transform:rotate(-225deg)}}
+@keyframes brdr {
+  0% {transform:translate(0);border-color:transparent}
+  50%{transform:translate(-300px, 0);border-color:#759AA1}
+  100%{transform:translate(0);border-color:transparent}}
+@keyframes brdrr {
+  0%{transform:translate(0);border-color:transparent}
+  50%{transform:translate(300px, 0);border-color:#759AA1}
+  100%{transform:translate(0);border-color:transparent}}
+@keyframes brdrrr {
+  0%{transform:translate(0);border-color:transparent}
+  50%{transform:translate(0, -300px);border-color:#759AA1}
+  100%{transform:translate(0);border-color:transparent}}
+@keyframes brdrrrr {
+  0%{transform:translate(0);border-color:transparent}
+  50%{transform:translate(0, 300px);border-color:#759AA1}
+  100%{transform:translate(0);border-color:transparent}}
+.border {
+position: absolute;
+  width: 330px;
+  height: 330px;
+  position: relative;
+  animation: border 7.5s infinite ease-in-out;
+  margin-left: 37.5%;
+  margin-top: -23%;
+}
+.border span {
+  width: 330px;
+  height: 330px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 4px solid #0B1B48;
+}
+.border span:nth-child(1) {
+  animation: brdr 7.5s ease-in-out infinite;
+}
+.border span:nth-child(2) {
+  animation: brdrr 7.5s ease-in-out infinite;
+}
+.border span:nth-child(3) {
+  animation: brdrrr 7.5s ease-in-out infinite;
+}
+.border span:nth-child(4) {
+  animation: brdrrrr 7.5s ease-in-out infinite;
+}
+
+#color_text{
+	position: absolute;
+	color:pink;
+	font-family: Arial;
+	font-size: 145px;
+	letter-spacing: 70px;
+	margin-top:-16%;
+	margin-left: 4%;}
+		#color_text:hover{-webkit-filter: hue-rotate(270deg)}
+#dno{
+	margin-top:30%
+}
+
+	-webkit-filter: hue-r otate(270deg);
